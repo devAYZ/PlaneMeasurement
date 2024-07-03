@@ -124,7 +124,7 @@ class QuadNode: SCNNode {
             let pill = drawSKRectangle(at: midpoint)
             let distance = calculateDistanceInInches(from: endpoint1.position, to: endpoint2.position)
 
-            let distanceString = String(format: "%.2f", distance)
+            let distanceString = String(format: "%.2f in", distance)
             let text = drawSKText(text: distanceString, at: midpoint)
 
             node.addChild(endpointNode)
